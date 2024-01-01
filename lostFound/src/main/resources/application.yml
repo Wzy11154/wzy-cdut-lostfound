@@ -1,0 +1,29 @@
+spring:
+  datasource:
+#    username: "root"
+    username: "wzy"
+    password: "123456"
+    url: jdbc:mysql://localhost:3306/lostfound
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+server:
+  port: 9091
+
+
+lostfound:
+  path: /home/www/prjUpload/
+#  path: /home/wzy/prjUpload/
+#  path: E:\prjUpload\
